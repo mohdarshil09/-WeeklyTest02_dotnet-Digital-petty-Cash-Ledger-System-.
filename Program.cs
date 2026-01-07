@@ -7,11 +7,9 @@
             Console.WriteLine("==========================================");
             Console.WriteLine("     Digital Petty Cash Ledger System");
             Console.WriteLine("==========================================\n");
-
             
             //Step 1: Create a Ledger<IncomeTransaction> to track funds received
             Ledger<IncomeTransaction> incomeLedger = new Ledger<IncomeTransaction>();
-
 
             // Step 2: Record a $500 replenishment from "Main Cash"
             IncomeTransaction replenishment = new IncomeTransaction(
@@ -25,10 +23,8 @@
             Console.WriteLine("Added income transaction:");
             Console.WriteLine($"  {replenishment.GetSummary()}\n");
 
-
             // Step 3: Create a Ledger<ExpenseTransaction> to track daily spends
             Ledger<ExpenseTransaction> expenseLedger = new Ledger<ExpenseTransaction>();
-
 
             // Step 4: Record expenses
             ExpenseTransaction stationeryExpense = new ExpenseTransaction(
@@ -65,15 +61,10 @@
             Console.WriteLine($"Total Expenses:   ${totalExpenses:F2}");
             Console.WriteLine("------------------------------------------");
 
-
             // Step 6: Calculate Net Balance (Total Income - Total Expenses)
             decimal netBalance = totalIncome - totalExpenses;
             Console.WriteLine($"Net Balance:      ${netBalance:F2}");
             Console.WriteLine("==========================================\n");
-
-
-          
-            
 
             Console.WriteLine("Press any key to exit...");
             Console.ReadKey();
