@@ -8,8 +8,6 @@ namespace Digital_Petty_Cash_Ledger_System
         // Additional property for Expense
         public string Category { get; set; }
 
-
-
         /// <summary>
         /// constructor for ExpenseTransaction
         /// </summary>
