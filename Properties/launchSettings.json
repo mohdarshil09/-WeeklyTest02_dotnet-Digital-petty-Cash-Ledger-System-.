@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "Digital Petty Cash Ledger System": {
+      "commandName": "Project"
+    },
+    "WSL": {
+      "commandName": "WSL2",
+      "distributionName": ""
+    }
+  }
+}
